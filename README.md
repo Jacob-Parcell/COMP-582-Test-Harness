@@ -6,18 +6,9 @@ The purpose of this repository is to demonstrate individual contribution, requir
 
 📌 Repository Structure
 COMP-582-Test-Harness/
-│
-├── user-stories/
-│     ── shyam-thummar-user-story.md
-│     ── jacob-parcell-user-story.md   (example if teammates add theirs)
-│     ── ... (each team member adds their own)
-│
-├── tests/
-│     ── test_quiz_generation_shyam-thummar.py
-│     ── test_quiz_generation_jacob.py   (example)
-│     ── ... (each member adds 4–5 tests)
-│
-└── README.md
+── user-stories/  ── shyam-thummar-user-story.md  ── jacob-parcell-user-story.md   (example add yours) ── ... (each team member adds their own)
+
+── tests/  ── test_quiz_generation_shyam-thummar.py  ── test_quiz_generation_jacob.py   (example)  ── ... (each member adds 4–5 tests)  ── README.md
 
 
 Each file should be clearly labeled with the contributor's name to show participation.
