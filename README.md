@@ -1,31 +1,99 @@
-# COMP 582 Test Harness
+COMP 582 — Test Harness
 
-This repository contains unit tests and supporting artifacts for the
-Automatic Quiz Generation project. Each team member chose a user story
-from the main project and contributed 4–5 unit tests related to that
-user story. Files are named and commented with contributor names to
-make individual contributions clear.
+This repository contains the test harness for the Automatic Quiz Generation WebApp project.
+Each team member selected one user story from the main project and contributed 4–5 unit tests related to that story.
+The purpose of this repository is to demonstrate individual contribution, requirement validation, and basic unit-testing structure.
 
-## How to Run Tests (Optional)
+📌 Repository Structure
+COMP-582-Test-Harness/
+│
+├── user-stories/
+│     ├── shyam-thummar-user-story.md
+│     ├── jacob-parcell-user-story.md   (example if teammates add theirs)
+│     └── ... (each team member adds their own)
+│
+├── tests/
+│     ├── test_quiz_generation_shyam-thummar.py
+│     ├── test_quiz_generation_jacob.py   (example)
+│     └── ... (each member adds 4–5 tests)
+│
+└── README.md
+
+
+Each file should be clearly labeled with the contributor's name to show participation.
+
+🧪 How to Run Tests (Optional)
 
 These tests are written using Python and pytest for demonstration purposes.
+Running the tests is optional and not required for grading, but included for completeness.
 
-```bash
 pip install pytest
 pytest
 
 
----
+👥 Contribution Requirements
 
-### Step 6 – Stage files with Git
+Each team member must:
 
-Check what you’ve got:
+Choose one user story from the main Quiz Generator project.
 
-```bash
-ls
-# You should see: README.md  user-stories/  tests/
+Write 4–5 unit tests related to that user story.
+
+Add their contribution to:
+
+user-stories/<your-name>-user-story.md
+
+tests/test_<something>_<your-name>.py
+
+Commit and push to this repository.
 
 
-quit
- EOF
-E0F
+
+🚀 Quick Start — GitHub Reference Commands
+
+These commands match GitHub’s typical “Quick Setup” instructions and are included for convenience.
+
+Create a new repository from scratch
+echo "# COMP-582-Test-Harness" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Jacob-Parcell/COMP-582-Test-Harness.git
+git push -u origin main
+
+Push an existing local project
+git remote add origin https://github.com/Jacob-Parcell/COMP-582-Test-Harness.git
+git branch -M main
+git push -u origin main
+
+
+📄 Purpose of This Test Harness
+
+This repository is not the full application.
+Instead, it serves as a structured environment for:
+
+Requirement interpretation
+
+Writing simple unit tests
+
+Practicing Test-Driven Development (TDD)
+
+Demonstrating individual contribution
+
+Supporting the main Quiz Generator WebApp project
+
+
+✨ Contributors
+
+Shyam Thummar
+
+Jacob Parcell
+
+Feather Hoshizora
+
+Raul Ramirez
+
+Chaitanya Pavan Lanka
+
+Each contributor should add their own user-story file and test file.
