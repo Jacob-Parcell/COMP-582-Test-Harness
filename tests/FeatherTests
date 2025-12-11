@@ -1,0 +1,37 @@
+import java.util.Scanner;  // Import the Scanner class
+/**
+ * Feather Hoshizora
+ * Red test: Allows user to select difficulty levels.
+ */
+ 
+public class FeatherTests {
+    public static String Difficulty ="";//placeholder blank string, defaulting to "easy" is better for final product but makes testing less useful
+    public static Scanner testScan = new Scanner(System.in);//scanner to take in difficulty input
+    public static void main(String[] args) {
+        
+        testGetDifficulty();
+    }
+    public static void testGetDifficulty() {
+        // Manual Test
+        String Easy = "Easy";
+        String Medium = "Medium";
+        String Hard = "Hard";
+        String Expert = "Expert";//should put this in some array but this is just a stub
+        //Can be adjusted for different languages.
+        System.out.println("What difficulty would you like?");
+        Difficulty = testScan.nextLine();  // Read user input
+        String actual = getDifficulty();
+        if (actual.equalsIgnoreCase(Easy)||actual.equalsIgnoreCase(Medium)||actual.equalsIgnoreCase(Hard)
+        ||actual.equalsIgnoreCase(Expert)) {
+            System.out.println("Test Passed");
+        } else {
+            System.out.println("Test Failed. Expected: Easy, Medium, Hard, or Expert, but got: " + actual);
+        }
+    }
+
+    // This would be your code to pass the test after you implement the function
+    public static String getDifficulty() {
+        // Implementation goes here (to be written after this test fails)
+        return Difficulty; // Difficulty
+    }
+}
