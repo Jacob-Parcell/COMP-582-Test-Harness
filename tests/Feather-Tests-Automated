@@ -3,6 +3,16 @@ import org.junit.jupiter.api.Test;
 
 public class FeatherTests {//utilizing junit, for testing with no user input. 
 
+    public static String getDifficulty(String input) {
+    if (input == null) return null;
+
+    if (input.equalsIgnoreCase("Easy"))   return "Easy";
+    if (input.equalsIgnoreCase("Medium")) return "Medium";
+    if (input.equalsIgnoreCase("Hard"))   return "Hard";
+    if (input.equalsIgnoreCase("Expert")) return "Expert";
+
+    return null; // invalid difficulty
+}
     @Test
     public void testValidDifficulties() {
         assertEquals("Easy",   FeatherTests.getDifficulty("Easy"));
