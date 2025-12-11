@@ -1,0 +1,19 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class FeatherTests {//utilizing junit, for testing with no user input. 
+
+    @Test
+    public void testValidDifficulties() {
+        assertEquals("Easy",   FeatherTests.getDifficulty("Easy"));
+        assertEquals("Easy",   FeatherTests.getDifficulty("easy"));
+        assertEquals("Medium", FeatherTests.getDifficulty("MEDIUM"));
+        assertEquals("Hard",   FeatherTests.getDifficulty("Hard"));
+        assertEquals("Expert", FeatherTests.getDifficulty("expert"));
+    }
+
+    @Test
+    public void testInvalidDifficulty() {
+        assertNull(FeatherTests.getDifficulty("super awesomely easy"));
+    }
+}
